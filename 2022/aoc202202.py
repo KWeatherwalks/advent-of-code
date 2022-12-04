@@ -56,5 +56,5 @@ if __name__ == "__main__":
     # Solve
     answer1, answer2 = solve(puzzle_input)
     # Submit answers
-    # submit(answer1, part='a', day=2, year=2022)
+    submit(answer1, part='a', day=2, year=2022)
     submit(answer2, part='b', day=2, year=2022)
