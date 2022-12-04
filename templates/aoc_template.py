@@ -30,9 +30,9 @@ def solve(puzzle_input):
 
 if __name__ == "__main__":
     # Connect to the API
-    puzzle_input = Puzzle(year=2021, day=2).input_data.split('\n')
+    puzzle_input = Puzzle(year=2022, day=None).input_data
     # Solve
     answer1, answer2 = solve(puzzle_input)
     # Submit answers
-    submit(answer1, part='a', day=None, year=2021)
-    submit(answer2, part='b', day=None, year=2021)
+    submit(answer1, part='a', day=None, year=2022)
+    submit(answer2, part='b', day=None, year=2022)
