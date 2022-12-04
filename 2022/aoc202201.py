@@ -1,6 +1,3 @@
-import os
-import sys
-
 from aocd import submit
 from aocd.models import Puzzle
 
