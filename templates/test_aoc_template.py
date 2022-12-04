@@ -3,12 +3,11 @@
 
 import pathlib
 
+import aoc_template as aoc
 import pytest
 from aocd.models import Puzzle
 
-import aoc_template as aoc
-
-PUZZLE_DIR = pathlib.Path(__file__).parent
+PUZZLE_DIR = pathlib.Path(__file__).parent / "example-data"
 
 
 @pytest.fixture
@@ -38,4 +37,4 @@ def test_part1_example1(example1):
 @pytest.mark.skip(reason="Not implemented")
 def test_part2_example1(example1):
     """Test part 2 on example input"""
-    assert aoc.part2(example2) == ...
+    assert aoc.part2(example1) == ...
