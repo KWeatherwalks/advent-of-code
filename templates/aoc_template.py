@@ -7,6 +7,7 @@ from aocd.models import Puzzle
 
 def parse(puzzle_input):
     """Parse input"""
+    return puzzle_input.split("\n")
 
 
 def part1(data):
