@@ -31,7 +31,7 @@ def part1(data):
 
     # assign variables to lists
     stacks, moves = data
-
+    
 
     def move_crates(move):
         '''Helper function to move crates from one stack to another'''   
@@ -79,9 +79,8 @@ def part2(data):
 
 def solve(puzzle_input):
     """Solve the puzzle for the given input"""
-    data = parse(puzzle_input)
-    solution1 = part1(data)
-    solution2 = part2(data)
+    solution1 = part1(parse(puzzle_input))
+    solution2 = part2(parse(puzzle_input))
 
     return solution1, solution2
 
@@ -92,5 +91,5 @@ if __name__ == "__main__":
     # Solve
     answer1, answer2 = solve(puzzle_input)
     # Submit answers
-    # submit(answer1, part='a', day=5, year=2022)
-    # submit(answer2, part='b', day=5, year=2022)
+    submit(answer1, part='a', day=5, year=2022)
+    submit(answer2, part='b', day=5, year=2022)
