@@ -41,8 +41,6 @@ def part2(data):
         # find its priority
         priorities += ascii_letters.index(item) + 1
 
-    print(priorities)
-
     return priorities
 
 

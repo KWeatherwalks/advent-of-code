@@ -12,8 +12,7 @@ def parse(puzzle_input):
 
 def part1(data):
     """Solve part 1"""
-    print(data[:5])
-
+    
     # comparison dictionary
     evaluator = {'AX': 1+3, 'AY': 2+6, 'AZ': 3+0,
                  'BX': 1+0, 'BY': 2+3, 'BZ': 3+6,
