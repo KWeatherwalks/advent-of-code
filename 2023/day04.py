@@ -45,7 +45,11 @@ class CardCollection:
         for card in self.cards[winning_card.id : winning_card.id + number_of_cards_won]:
             self.add_card(card, multiple=multiplier)
 
+<<<<<<< HEAD
     def scratch_card(self, card, multiple=1):
+=======
+    def scatch_card(self, card, multiple=1):
+>>>>>>> 616435afbb5fd4b22ac5825143a0509934004506
         self.counts[card.id] -= multiple
         self.add_cards_won(card, card.winning_number_count(), multiplier=multiple)
 
@@ -83,7 +87,11 @@ def part2(data):
     # iteratively move through the list scratching cards
     for card in scratchcard_collection.cards:
         duplicate_count = scratchcard_collection.counts[card.id]
+<<<<<<< HEAD
         scratchcard_collection.scratch_card(card, duplicate_count)
+=======
+        scratchcard_collection.scatch_card(card, duplicate_count)
+>>>>>>> 616435afbb5fd4b22ac5825143a0509934004506
         scratchcard_count += duplicate_count
 
     return scratchcard_count
@@ -104,5 +112,10 @@ if __name__ == "__main__":
     # Solve
     answer1, answer2 = solve(puzzle_input)
     # Submit answers
+<<<<<<< HEAD
     submit(answer1, part="a", day=4, year=2023)
     submit(answer2, part="b", day=4, year=2023)
+=======
+    # submit(answer1, part="a", day=4, year=2023)
+    # submit(answer2, part="b", day=4, year=2023)
+>>>>>>> 616435afbb5fd4b22ac5825143a0509934004506
